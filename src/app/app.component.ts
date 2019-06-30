@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import * as M from 'materialize-css';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cz-ui';
+  ngOnInit(){
+    M.AutoInit();
+  }
+
 }

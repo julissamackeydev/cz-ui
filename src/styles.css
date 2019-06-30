@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    font-family: 'Oswald', sans-serif;
+}
+.full-height{
+    height:750px; 
+}
+.primary-background-color{
+    background-color: black;
+    opacity: 0.8;
+}
+.hidden{
+    display: none;
+}
+.conditional-top-margin{
+    margin-top: 200px;
+}
+.red-text{
+    color:#990000;
+}
+.dark-text{
+    color: black;
+    opacity: 0.9;
+}
+.nav-text{
+    font-style: bold;
+    font-size: 40px;
+    margin-left: 10%;
+    /* margin-bottom: 10%; */
+    margin-top: -3%;
+}
+.landing-page-height{
+    height: 85%;
+}
+.landing-page-background{
+    background-image: linear-gradient(to left, #000000, #021226);
+}
+.parallax-container {
+    height: 100%;
+}
+.btn, .btn-large, .btn-small, .btn-floating, .btn-large, .btn-small, .btn-flat {
+    font-size: inherit;
+    outline: 0;
+}
+.btn, .btn-large, .btn-small, .btn-flat {
+    border: none;
+    border-radius: inherit;
+    display: inline-block;
+    height: inherit;
+    line-height: inherit;
+    padding: inherit;
+    text-transform: uppercase;
+    vertical-align: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content {
+    padding-top: 40px;
+  }
