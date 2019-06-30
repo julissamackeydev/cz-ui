@@ -11,11 +11,20 @@ body{
 .hidden{
     display: none;
 }
+.dark-background-color{
+    background-color: #21201F;
+}
 .conditional-top-margin{
     margin-top: 200px;
 }
 .red-text{
     color:#990000;
+}
+.light-text{
+    color: lightgray;
+}
+.bio-text{
+    font-size: 18px;
 }
 .dark-text{
     color: black;
