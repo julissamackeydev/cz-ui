@@ -8,6 +8,9 @@ body{
     background-color: black;
     opacity: 0.8;
 }
+.detail-text{
+    color:white;
+}
 .hidden{
     display: none;
 }
@@ -17,7 +20,16 @@ body{
 .conditional-top-margin{
     margin-top: 200px;
 }
-.red-text{
+.med-top-margin{
+    margin-top: 100px;
+}
+.lesser-top-margin{
+    margin-top: 50px;
+}
+.left-margin{
+    margin-left: 17%;
+}
+.cz-red-text{
     color:#990000;
 }
 .light-text{
@@ -68,4 +80,48 @@ body{
 }
 .sticky + .content {
     padding-top: 40px;
-  }
+}
+.latest-block{
+    top: 10%;
+    margin-top: 30px;
+    margin-left:1%;
+    margin-right: 1%;
+    width: 25%;
+    height:30%;
+    background-color: #990000;
+}
+.latest-image{
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    /* position: relative; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #021226;
+}
+.latest-text{
+    color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.latest-block:hover .overlay {
+    opacity: 1;
+ }
+.gallery-thumbnail{
+    background-color: #990000;
+} 
+.album-name:hover{
+    color:white;
+}

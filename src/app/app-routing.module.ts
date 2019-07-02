@@ -7,6 +7,7 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { LatestComponent } from './latest/latest.component';
 import { AcclaimComponent } from './acclaim/acclaim.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { LatestDetailComponent } from '../app/latest-detail/latest-detail.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'gallery', component: GalleryComponent },
   { path: 'latest', component: LatestComponent },
   { path: 'acclaim', component: AcclaimComponent },
-  { path: 'bio', component: BioComponent }
+  { path: 'bio', component: BioComponent },
+  { path: 'details/:title', component: LatestDetailComponent }
 ];
 
 @NgModule({

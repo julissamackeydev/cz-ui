@@ -12,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { LatestDetailComponent } from './latest-detail/latest-detail.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     HeaderComponent,
     FooterComponent,
     LandingPageComponent,
-    NavBarComponent
+    NavBarComponent,
+    LatestDetailComponent
   ],
   imports: [
     BrowserModule,
