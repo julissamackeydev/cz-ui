@@ -1,47 +1,50 @@
 <div class="light-background full-height">
 
-    <div class="row">
-      <app-nav-bar class=" col s12 sticky"></app-nav-bar>
-    </div>
-
-    <div class="container conditional-top-margin">
-
-      <div class="row valign-wrapper" style="text-align: center;">
-        <div class="col s3">
-          <p>DATE</p>
-        </div>
-        <div class="col s3">
-          <p>LOCATION</p>
-        </div>
-        <div class="col s3">
-          <p>EVENT</p>
-        </div>
-        <div class="col s3">
-          <p>TICKETS</p>
-        </div>
-      </div>
-
-      <div class="divider"></div>
-
-      <div class="row valign-wrapper hoverable" style="text-align: center;">
-        <div class="col s3">
-          <p>DATE</p>
-        </div>
-        <div class="col s3">
-          <p>LOCATION</p>
-        </div>
-        <div class="col s3">
-          <p>EVENT</p>
-        </div>
-        <div class="col s3">
-          <p>TICKETS</p>
-        </div>
-      </div>
-
-
-
-
-    </div>
+  <div class="row">
+    <app-nav-bar class=" col s12 sticky"></app-nav-bar>
   </div>
 
-  <app-footer></app-footer>
+  <div class="container conditional-top-margin">
+
+    <div class="row valign-wrapper" style="text-align: center;">
+      <div class="col s3">
+        <p>DATE</p>
+      </div>
+      <div class="col s3">
+        <p>LOCATION</p>
+      </div>
+      <div class="col s3">
+        <p>EVENT</p>
+      </div>
+      <div class="col s3">
+        <p>TICKETS</p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div *ngFor="let event of upcoming">
+      <div class="row valign-wrapper hoverable" style="text-align: center;">
+        <div class="col s3">
+          <p>{{event.date}}</p>
+        </div>
+        <div class="col s3">
+          <p>{{event.location}}, {{event.city}}</p>
+        </div>
+        <div class="col s3">
+          <p>{{event.event}}</p>
+        </div>
+        <div class="col s3 black-text">
+          <p><a class='black-text' href={{event.tickets}} target="_blank">PURCHASE TICKETS</a></p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+</div>
+
+<app-footer></app-footer>

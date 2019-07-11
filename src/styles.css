@@ -127,6 +127,8 @@ body{
 .page-footer{
     background-color: #990000;
 }
-a{
-    color: white;
+.landing-page-background-image{
+    background-image: url('../src/assets/SoundBitesZarembalg1217.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }

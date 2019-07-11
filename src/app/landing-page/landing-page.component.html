@@ -1,20 +1,24 @@
 <div class="full-height">
   <div class="parallax-container">
     <div class="row landing-page-background"></div>
-    <div class="row landing-page-height landing-page-background">
-      <div class="col s6 white-text">
-        <h1>CHRISTIAN ZAREMBA</h1>
-        <h3>LOCATION</h3>
-        <h3>OPERA</h3>
-        <h6>DATE START - DATE END</h6>
-        <h5><a class="btn-flat red-text" href="#">PURCHASE TICKETS</a></h5>
+    <div class="row landing-page-height">
+      <div class="col s6 white-text landing-page-background" style="height:100%">
+        <h1>CHRISTIAN ZAREMBA</h1><h2>BASSO  CANTANTE</h2>
+        <br>
+        <br>
+        <h3>{{location}}</h3>
+        <h3>{{opera}}</h3>
+        <h6>{{startDate}} - {{endDate}}</h6>
+        <h5><a class="btn-flat red-text" href={{tickets}} target="_blank">PURCHASE TICKETS</a></h5>
       </div>
+      <div class="col s6 landing-page-background-image" style="height:100%"></div>
     </div>
     <div class="row">
       <app-nav-bar class="col s12"></app-nav-bar>
     </div>
   </div>
 </div>
+
 <div class="container full-height">
   <h1 style="text-align: center;">UPCOMING PERFORMANCES</h1>
   <div class="row valign-wrapper" style="text-align: center;">
@@ -34,20 +38,23 @@
 
   <div class="divider"></div>
 
-  <div class="row valign-wrapper hoverable" style="text-align: center;">
-    <div class="col s3">
-      <p>DATE</p>
-    </div>
-    <div class="col s3">
-      <p>LOCATION</p>
-    </div>
-    <div class="col s3">
-      <p>EVENT</p>
-    </div>
-    <div class="col s3">
-      <p>TICKETS</p>
+  <div *ngFor="let event of upcoming">
+    <div class="row valign-wrapper hoverable" style="text-align: center;">
+      <div class="col s3">
+        <p>{{event.date}}</p>
+      </div>
+      <div class="col s3">
+        <p>{{event.location}}, {{event.city}}</p>
+      </div>
+      <div class="col s3">
+        <p>{{event.event}}</p>
+      </div>
+      <div class="col s3 black-text">
+        <p><a class='black-text' href={{event.tickets}} target="_blank">PURCHASE TICKETS</a></p>
+      </div>
     </div>
   </div>
+
 </div>
 
 <div class="landing-page-background light-text full-height">
@@ -55,38 +62,37 @@
     <h1>Christian Zaremba</h1>
     <div class="bio-text">
       <p>{{bio}}</p>
-
     </div>
   </div>
 </div>
 
 <div class='full-height'>
   <h1 class="cz-red-text">IN THE NEWS</h1>
-    <div class="row med-top-margin left-margin">
+  <div class="row med-top-margin left-margin">
 
-      <div class="col s3 latest-block">
-        <p class="latest-text">TITLE</p>
-        <p class="latest-text">DATE</p>
-        <div class="overlay">
-            <p class=' btn-flat latest-text' routerLink="/details/title">READ MORE</p>
-          </div>
+    <div class="col s3 latest-block">
+      <p class="latest-text">TITLE</p>
+      <p class="latest-text">DATE</p>
+      <div class="overlay">
+        <p class=' btn-flat latest-text' routerLink="/details/title">READ MORE</p>
       </div>
+    </div>
 
-      <div class="col s3 latest-block">
-        <p class="latest-text">TITLE</p>
-        <p class="latest-text">DATE</p>
-        <div class="overlay">
-          <p class=' btn-flat latest-text' routerLink="/details/title">READ MORE</p>
-        </div>
+    <div class="col s3 latest-block">
+      <p class="latest-text">TITLE</p>
+      <p class="latest-text">DATE</p>
+      <div class="overlay">
+        <p class=' btn-flat latest-text' routerLink="/details/title">READ MORE</p>
       </div>
+    </div>
 
-      <div class="col s3 latest-block">
-        <p class="latest-text">TITLE</p>
-        <p class="latest-text">DATE</p>
-        <div class="overlay">
-          <p class=' btn-flat latest-text' routerLink="/details/title">READ MORE</p>
-        </div>
+    <div class="col s3 latest-block">
+      <p class="latest-text">TITLE</p>
+      <p class="latest-text">DATE</p>
+      <div class="overlay">
+        <p class=' btn-flat latest-text' routerLink="/details/title">READ MORE</p>
       </div>
+    </div>
 
   </div>
   <div class="divider red"></div>
@@ -94,51 +100,51 @@
     <h1 class='cz-red-text' style="text-align:right;">RECENT REVIEWS</h1>
   </div>
   <div class="container">
-      <div class="row cz-red-text" style="font-style:italic">
-          <p class="col s2">A REVIEW...</p>
-          <p class="col s2">A REVIEW...</p>
-          <p class="col s2">A REVIEW...</p>
-          <p class="col s2">A REVIEW...</p>
-          <p class="col s2">A REVIEW...</p>
-        </div>
+    <div class="row cz-red-text" style="font-style:italic">
+      <p class="col s2">A REVIEW...</p>
+      <p class="col s2">A REVIEW...</p>
+      <p class="col s2">A REVIEW...</p>
+      <p class="col s2">A REVIEW...</p>
+      <p class="col s2">A REVIEW...</p>
+    </div>
   </div>
 </div>
 
 
 <div class="landing-page-background full-height lesser-top-margin white-text">
-    <div class="container">
-      <div class="row">
-       
-        <!-- images -->
-        <div class="col s6 gallery-images">
-          <div class="row">
-            <h5 class="col s12" style="text-align:right;">ALBUMS</h5>
-            <h6 class="col s12 btn-flat white-text" style="text-align:right;">SEE ALL ALBUMS</h6>
-          </div>
-          <div class="row">
-            <div class="gallery-thumbnail" style="float: right;">
+  <div class="container">
+    <div class="row">
+
+      <!-- images -->
+      <div class="col s6 gallery-images">
+        <div class="row">
+          <h5 class="col s12" style="text-align:right;">ALBUMS</h5>
+          <h6 class="col s12 btn-flat white-text" style="text-align:right;">SEE ALL ALBUMS</h6>
+        </div>
+        <div class="row">
+          <div class="gallery-thumbnail" style="float: right;">
             <p style="text-align:center;">IMAGE</p>
             <p class="btn-flat album-name" style="text-align:center;">ALBUM DESCRIPTION</p>
           </div>
-          </div>
         </div>
-        
-        <!-- videos -->
-        <div class="col s6 gallery-videos">
-          <div class="row">
-            <h5 class="col s12" style="text-align: left;">VIDEOS</h5>
-            <h6 class="col s12 btn-flat white-text" style="text-align: left;">SEE ALL VIDEOS</h6>
-          </div>
-          <div class="row">
-            <div style="margin-left:2%" class="gallery-thumbnail">
+      </div>
+
+      <!-- videos -->
+      <div class="col s6 gallery-videos">
+        <div class="row">
+          <h5 class="col s12" style="text-align: left;">VIDEOS</h5>
+          <h6 class="col s12 btn-flat white-text" style="text-align: left;">SEE ALL VIDEOS</h6>
+        </div>
+        <div class="row">
+          <div style="margin-left:2%" class="gallery-thumbnail">
             <p style="text-align:center;">VIDEO</p>
             <p style="text-align:center;" class="btn-flat album-name">VIDEO DESCRIPTION</p>
           </div>
-          </div>
         </div>
-  
       </div>
+
     </div>
   </div>
+</div>
 
-  <app-footer></app-footer>
+<app-footer></app-footer>

@@ -8,15 +8,74 @@ import { Component, OnInit } from '@angular/core';
 export class LandingPageComponent implements OnInit {
 
   constructor() { }
-  bio = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at nisl nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut commodo nisi non urna convallis luctus. In hac habitasse platea dictumst. Aenean scelerisque lorem enim, condimentum bibendum purus varius eu. Sed at mattis quam, vel malesuada nisl. Donec nec ante est. Duis commodo venenatis ex, a iaculis enim bibendum quis. Proin elit felis, aliquam sed sollicitudin sit amet, pharetra nec erat. Sed sit amet euismod ante.
+  location = `ROYAL OPERA HOUSE, UK`;
+  opera = `AGRIPPINA`;
+  startDate = `AUGUST 19`;
+  endDate = ` OCTOBER 12`;
+  tickets = `https://www.roh.org.uk/`;
+  upcoming = [
+    {
+        "_id": {
+            "$oid": "5cd8a219d38f5a51aeb17aa3"
+        },
+        "date": "AUG 19 - OCT 12 2019",
+        "location": "ROYAL OPERA HOUSE",
+        "city": "LONDON",
+        "event": "AGRIPPINA",
+        "tickets": "https://www.roh.org.uk/"
+    },
+    {
+        "_id": {
+            "$oid": "5cd8a219d38f5a51aeb17aa3"
+        },
+        "date": "OCT 19 - NOV 17 2019",
+        "location": "LYRIC OPERA",
+        "city": "KANSAS CITY",
+        "event": "LA BOHEME",
+        "tickets": "https://kcopera.org/"
+    },
+    {
+        "_id": {
+            "$oid": "5cd8a219d38f5a51aeb17aa3"
+        },
+        "date": "DEC 23 2019 - MAR 7 2020",
+        "location": "METROPOLITAN OPERA",
+        "city": "NEW YORK CITY",
+        "event": "AGRIPPINA",
+        "tickets": "https://www.metopera.org/"
+    },
+    {
+        "_id": {
+            "$oid": "5cd8a219d38f5a51aeb17aa3"
+        },
+        "date": "MAR 28 - APR 11 2020",
+        "location": "NASHVILLE OPERA",
+        "city": "NASHVILLE",
+        "event": "RIGOLETTO",
+        "tickets": "http://www.nashvilleopera.org/"
+    },
+    {
+        "_id": {
+            "$oid": "5cd8a219d38f5a51aeb17aa3"
+        },
+        "date": "APR 19 - MAY 30 2020",
+        "location": "L'OPERA DE MONTREAL",
+        "city": "MONTREAL",
+        "event": "DIE ZAUBERFLÖTE",
+        "tickets": "https://www.operademontreal.com/en"
+    }
+  ];
+  bio = `The American/French bass Christian Zaremba is quickly garnering a reputation in the eyes of critics and directors alike, as a flexible and multifaceted artist comfortable portraying a wide range of characters; from lovers, to loafers, and to lords with a voice to match.  
 
-  Curabitur dictum ullamcorper nisi quis finibus. Vivamus id purus ut magna pretium ultrices. Pellentesque dolor diam, varius sit amet dui sit amet, aliquam tincidunt ligula. Integer sed risus sem. Praesent sodales sodales augue at iaculis. In hac habitasse platea dictumst. Fusce non pellentesque nulla, in volutpat mi. Aliquam id lectus vel nulla aliquam suscipit. Ut placerat, mauris in fringilla pellentesque, neque odio pretium nisi, vel consequat ipsum orci in diam. Nunc mollis lectus vitae leo vehicula porta. Suspendisse sollicitudin consequat massa, et ultrices dolor dignissim quis. Vivamus ut eros purus. Praesent volutpat enim non arcu gravida tempor. Nulla facilisi.
+ 
+
+  Praised by the New York Times as "a stage animal with a big bass voice" Christian returned in 2016 to Wolf Trap Opera singing Collatinus in The Rape of Lucretia and Passagallo in Gassman's L'Opera Seria.  In the 2016-17 season Christian returns to Opera Omaha to sing Colline in La Boheme and will make his Portland Opera debut in the same role.  Also in Portland, he will reprise his role as the Bass Soloist in Lang's The Little Matchgirl Passion and sing Andrew in The Difficulty of Crossing a Field.  
   
-  Vivamus varius imperdiet mi malesuada viverra. Curabitur cursus finibus nisi, ut porta tellus dignissim id. Suspendisse tempus odio sit amet velit dictum, vel tempus leo hendrerit. Nulla at dolor mollis, porta ipsum sit amet, scelerisque diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas urna neque, ullamcorper sit amet massa a, dictum posuere diam. Morbi blandit ultricies ipsum id molestie. In hac habitasse platea dictumst. Nam vitae euismod lacus. Suspendisse dignissim quam convallis, fermentum ligula at, sagittis turpis. Nulla purus orci, hendrerit ut feugiat et, lobortis sit amet nibh. Nam eleifend dui sed convallis aliquet.
+   
   
-  Nunc mattis pharetra orci. Vivamus tempor justo et blandit porttitor. Cras hendrerit commodo lacus, scelerisque sagittis turpis commodo sit amet. Vivamus placerat enim porta, dapibus risus eget, congue nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla gravida et ligula ut porta. Pellentesque non urna elit. Pellentesque cursus tempus semper. Sed condimentum nibh eleifend purus vehicula mattis. Aliquam pulvinar, tellus pellentesque dictum eleifend, metus enim lacinia arcu, eget auctor mauris enim et sem. Aenean ac viverra augue, sed tristique erat. Donec eu augue lacinia, dignissim neque sit amet, accumsan velit. Duis efficitur dolor facilisis dui gravida maximus. Suspendisse molestie lectus nec lorem facilisis, ac porta elit condimentum.
+  The 2017-18 season sees Mr. Zaremba make his debut at the Metropolitan Opera on New Year's Eve as Angelotti in Tosca.  He will also make debuts with Austin Opera as Zuniga in Carmen and as Sparafucile in Rigoletto  with Michigan Opera Theater. 
   
-  Aliquam non libero et velit pellentesque ornare. Vestibulum eu nunc vitae mauris imperdiet posuere. Sed eu dolor vel est tristique rhoncus. Pellentesque ac nulla ac ex accumsan semper. Maecenas congue augue id enim auctor sagittis. Nulla rutrum ante eu nibh dignissim lobortis. Phasellus ultrices laoreet lorem id porta. Aliquam viverra felis in lacus posuere, in porttitor tortor dictum. Vestibulum eget ultrices sapien. Sed sit amet lacus et nisl lobortis interdum. Aenean pulvinar euismod sapien, et aliquam tellus auctor at. Nunc ornare magna leo, vitae efficitur enim commodo in. Pellentesque mattis semper nisl, a commodo tellus sagittis consectetur. Curabitur sit amet libero ut metus maximus ultrices. Donec sit amet elementum mauris. Ut consequat massa id condimentum fringilla.`
+  `
   ngOnInit() {
   }
 
