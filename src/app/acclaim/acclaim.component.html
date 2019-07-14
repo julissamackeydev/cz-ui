@@ -5,22 +5,26 @@
 <div class='full-height cz-red-text med-top-margin container'>
   <div class="row">
 
-    <div class="col s6 landing-page-background full-height" style="text-align:center">
-      <div class="row">
-        <h5>REVIEWS FOR A RECENT SHOW</h5>
+    <div class="col s6 landing-page-background full-height">
+      <div class="row" style="margin-bottom:100%">
+        <h5 style="text-align:right; padding-right:10%;">REVIEWS FOR A RECENT SHOW</h5>
       </div>
       <div class="row">
-        <p>"Review review review."</p>
-        <p style="font-style:italic; text-align:center">- SOURCE</p>
+        <div *ngFor="let review of featuredReviews" style="font-size: large; text-align:right; padding-right:10%; padding-top: 7%;">
+            <p>"{{review.review}}."</p>
+            <p style="font-style:italic; text-align: right">- {{review.source}}</p>
+        </div>
       </div>
     </div>
-    <div class="col s6" style="text-align:right">
+    <div class="col s6" style="text-align:left;">
       <div class="row">
-        <h6>OTHER CRITICAL ACCLAIM</h6>
+        <h5 style="padding-left:12%">OTHER CRITICAL ACCLAIM</h5>
       </div>
       <div class="row">
-        <p>"Other review for another thing"</p>
-        <p style="font-style:italic;">- SOURCE</p>
+        <div *ngFor="let review of otherReviews" style="font-size:large; padding-left:12%; padding-top: 7%; text-align: left;">
+            <p>"{{review.review}}"</p>
+            <p style="font-style:italic;">- {{review.source}}</p>
+        </div>
       </div>
     </div>
   </div>

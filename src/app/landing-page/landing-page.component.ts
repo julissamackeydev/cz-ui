@@ -65,17 +65,12 @@ export class LandingPageComponent implements OnInit {
         "tickets": "https://www.operademontreal.com/en"
     }
   ];
-  bio = `The American/French bass Christian Zaremba is quickly garnering a reputation in the eyes of critics and directors alike, as a flexible and multifaceted artist comfortable portraying a wide range of characters; from lovers, to loafers, and to lords with a voice to match.  
-
- 
-
-  Praised by the New York Times as "a stage animal with a big bass voice" Christian returned in 2016 to Wolf Trap Opera singing Collatinus in The Rape of Lucretia and Passagallo in Gassman's L'Opera Seria.  In the 2016-17 season Christian returns to Opera Omaha to sing Colline in La Boheme and will make his Portland Opera debut in the same role.  Also in Portland, he will reprise his role as the Bass Soloist in Lang's The Little Matchgirl Passion and sing Andrew in The Difficulty of Crossing a Field.  
-  
+  bioContent =[`Whether “stealing the evening. . . as the dancing master” (The Washington Post) or “chilling in espousing the theories of Negro management” (Opera News), French-American bass, Christian Zaremba, is intent on leaving a strong impression each time he performs.
+  Last season, Mr. Zaremba was seen as Angelotti in Tosca at the Metropolitan Opera, Sparafucile in Rigoletto with Michigan Opera Theater, Zuniga in Carmen with Austin Opera, and the bass soloist in Verdi’s Requiem with The Greenwich Symphony.  Recent highlights include Il Re in Aïda with the National Symphony, Collatinus in The Rape of Lucretia, Passagallo in L’Opera Seria, and Dr. Bartolo in Le nozze di Figaro with Wolf Trap Opera, Colline in La bohème with Portland Opera and Opera Omaha, Sarastro in Die Zauberflöte and Ashby in La fanciulla del West with Minnesota Opera, and the Bass Soloist in The Little Match Girl Passion with the Glimmerglass Festival and Portland Opera.`,
    
+  `In the 2018-2019 season, Mr. Zaremba returns to The Metropolitan for productions of Gianni Schicchi and Tosca before greeting the New Year with a return to Austin Opera as the French General in Silent Night and to Minnesota Opera as Mountain Landis in the world premier of The Fix by Joel Puckett.  He then makes debuts with The Lyric Opera of Kansas City as Nouribad in Les pêcheurs des perles and reprises his Sparafucile in Rigoletto with Opera Theatre of St. Louis.`,
   
-  The 2017-18 season sees Mr. Zaremba make his debut at the Metropolitan Opera on New Year's Eve as Angelotti in Tosca.  He will also make debuts with Austin Opera as Zuniga in Carmen and as Sparafucile in Rigoletto  with Michigan Opera Theater. 
-  
-  `
+  `Future seasons will see him join the cast of Agrippina at the Royal Opera House in London, as Colline in La bohème with Lyric Opera of Kansas City, Lesbo in Agrippina with the Metropolitan Opera, Sparafucile in Rigoletto with Nashville Opera, Sarastro in Die Zauberflöte with Opéra de Montreal, and in a much-anticipated titular role debut with Austin Opera.`];
   ngOnInit() {
   }
 

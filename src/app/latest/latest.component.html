@@ -4,31 +4,20 @@
 
 <div class='landing-page-background full-height'>
 
-    <div class="row med-top-margin left-margin">
 
-      <div class="col s3 latest-block">
-        <p class="latest-text">TITLE</p>
-        <p class="latest-text">DATE</p>
-        <div class="overlay">
-            <p class=' btn-flat latest-text' routerLink="/details/title">READ MORE</p>
-          </div>
-      </div>
 
-      <div class="col s3 latest-block">
-        <p class="latest-text">TITLE</p>
-        <p class="latest-text">DATE</p>
+  <div class="row med-top-margin left-margin">
+
+    <div *ngFor="let clip of clips">
+      <div class="col s3 latest-block" [ngStyle]="{'background-image':clip.image}">
+        <p class="latest-text">{{clip.description}}</p>
+        <p class="latest-text">{{clip.date}}</p>
         <div class="overlay">
-          <p class=' btn-flat latest-text' routerLink="/details/title">READ MORE</p>
+          <p class=' btn-flat latest-text' [routerLink]="['/details/', clip._id.$oid]">READ MORE</p>
         </div>
       </div>
 
-      <div class="col s3 latest-block">
-        <p class="latest-text">TITLE</p>
-        <p class="latest-text">DATE</p>
-        <div class="overlay">
-          <p class=' btn-flat latest-text' routerLink="/details/title">READ MORE</p>
-        </div>
-      </div>
+    </div>
 
   </div>
 

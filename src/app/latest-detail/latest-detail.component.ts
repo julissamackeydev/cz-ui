@@ -8,15 +8,29 @@ import { Component, OnInit } from '@angular/core';
 export class LatestDetailComponent implements OnInit {
 
   constructor() { }
-  snippet = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at nisl nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut commodo nisi non urna convallis luctus. In hac habitasse platea dictumst. Aenean scelerisque lorem enim, condimentum bibendum purus varius eu. Sed at mattis quam, vel malesuada nisl. Donec nec ante est. Duis commodo venenatis ex, a iaculis enim bibendum quis. Proin elit felis, aliquam sed sollicitudin sit amet, pharetra nec erat. Sed sit amet euismod ante.
-
-  Curabitur dictum ullamcorper nisi quis finibus. Vivamus id purus ut magna pretium ultrices. Pellentesque dolor diam, varius sit amet dui sit amet, aliquam tincidunt ligula. Integer sed risus sem. Praesent sodales sodales augue at iaculis. In hac habitasse platea dictumst. Fusce non pellentesque nulla, in volutpat mi. Aliquam id lectus vel nulla aliquam suscipit. Ut placerat, mauris in fringilla pellentesque, neque odio pretium nisi, vel consequat ipsum orci in diam. Nunc mollis lectus vitae leo vehicula porta. Suspendisse sollicitudin consequat massa, et ultrices dolor dignissim quis. Vivamus ut eros purus. Praesent volutpat enim non arcu gravida tempor. Nulla facilisi.
-  
-  Vivamus varius imperdiet mi malesuada viverra. Curabitur cursus finibus nisi, ut porta tellus dignissim id. Suspendisse tempus odio sit amet velit dictum, vel tempus leo hendrerit. Nulla at dolor mollis, porta ipsum sit amet, scelerisque diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas urna neque, ullamcorper sit amet massa a, dictum posuere diam. Morbi blandit ultricies ipsum id molestie. In hac habitasse platea dictumst. Nam vitae euismod lacus. Suspendisse dignissim quam convallis, fermentum ligula at, sagittis turpis. Nulla purus orci, hendrerit ut feugiat et, lobortis sit amet nibh. Nam eleifend dui sed convallis aliquet.
-  
-  Nunc mattis pharetra orci. Vivamus tempor justo et blandit porttitor. Cras hendrerit commodo lacus, scelerisque sagittis turpis commodo sit amet. Vivamus placerat enim porta, dapibus risus eget, congue nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla gravida et ligula ut porta. Pellentesque non urna elit. Pellentesque cursus tempus semper. Sed condimentum nibh eleifend purus vehicula mattis. Aliquam pulvinar, tellus pellentesque dictum eleifend, metus enim lacinia arcu, eget auctor mauris enim et sem. Aenean ac viverra augue, sed tristique erat. Donec eu augue lacinia, dignissim neque sit amet, accumsan velit. Duis efficitur dolor facilisis dui gravida maximus. Suspendisse molestie lectus nec lorem facilisis, ac porta elit condimentum.
-  
-  Aliquam non libero et velit pellentesque ornare. Vestibulum eu nunc vitae.`;
+  clips = [
+    {
+    "_id": { "$oid": "5cd897f9d46c231f62354987" },
+    "description": "CHRISTIAN WILL JOIN THE CAST OF AGRIPPINA AT THE ROYAL OPERA HOUSE IN LONDON",
+    "date": "JUL 11 2019",
+    "content": "Christian has recently been invited to the Royal Opera House in London to join the cast of Agrippina, which includes Joyce DiDonato, Franco Fagioli, and Ierstyn Davies.   Maxim Emelyanychev conducts.",
+    "image": ""
+    },
+    {
+    "_id": { "$oid": "5cd897f9d46c231f62354987" },
+    "description": "AS A HIRED ASSASSIN...",
+    "date": "JUL 11 2019",
+    "content": "In review of Opera Theater of St. Louis’ Rigoletto, Broadway World notes, “Christian Zaremba is gracefully menacing as Sparafucile, the hired assassin. On his exit at the end of one scene he holds an almost sub-sonic bass note practically forever.  Read the full review here: https://www.broadwayworld.com/bwwopera/article/BWW-Review-A-Glorious-RIGOLETTO-Opens-at-Opera-Theatre-St-Louis-20190604",
+    "image": ""
+    },
+    {
+    "_id": { "$oid": "5cd897f9d46c231f62354987" },
+    "description": "SONGS & DANCES OF DEATH",
+    "date": "JUL 11 2019",
+    "content": "Christian will sing Modest Mussorgski’s famous song cycle for bass, Songs and Dances of Death, with the Greenwich Symphony in late November 2019.  Please check later for scheduling updates.",
+    "image": ""
+    }
+  ];
 
   ngOnInit() {
   }

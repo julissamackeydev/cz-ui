@@ -3,9 +3,11 @@
 </div>
 <div class="landing-page-background light-text conditional-top-margin full-height">
     <div class="container">
-      <h1>Christian Zaremba</h1>
+      <h1>Christian Zaremba | BASSO CANTANTE </h1>
         <div class="bio-text">
-          <p>{{content}}</p>
+          <div *ngFor="let paragraph of content">
+            <p>{{paragraph}}</p>
+          </div>
       
         </div>
       </div>

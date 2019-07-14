@@ -36,7 +36,7 @@
     </div>
   </div>
 
-  <div class="divider"></div>
+  <div class="divider red"></div>
 
   <div *ngFor="let event of upcoming">
     <div class="row valign-wrapper hoverable" style="text-align: center;">
@@ -59,9 +59,9 @@
 
 <div class="landing-page-background light-text full-height">
   <div class="container">
-    <h1>Christian Zaremba</h1>
-    <div class="bio-text">
-      <p>{{bio}}</p>
+    <h1>Christian Zaremba | BASSO CANTANTE</h1>
+    <div class="bio-text" *ngFor="let paragraph of bioContent">
+      <p>{{paragraph}}</p>
     </div>
   </div>
 </div>
