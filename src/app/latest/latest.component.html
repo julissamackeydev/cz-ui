@@ -9,7 +9,7 @@
   <div class="row med-top-margin left-margin">
 
     <div *ngFor="let clip of clips">
-      <div class="col s3 latest-block" [ngStyle]="{'background-image':clip.image}">
+      <div class="col s3 latest-block" id={{clip.image}}>
         <p class="latest-text">{{clip.description}}</p>
         <p class="latest-text">{{clip.date}}</p>
         <div class="overlay">

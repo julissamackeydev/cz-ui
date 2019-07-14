@@ -86,7 +86,18 @@ body{
     width: 25%;
     height:30%;
     display: inline-block;
-    background-color: #990000;
+    background-repeat: no-repeat; 
+    background-position:center; 
+    background-size: cover;
+}
+#convent-garden{
+    background-image: url('../src/assets/covent-garden.jpeg');
+}
+#sparafucille-rigoletto{
+    background-image: url('../src/assets/sparafucille-rigoletto.jpg');
+}
+#mussorgsky{
+    background-image: url('../src/assets/mussorgsky.jpg');
 }
 .latest-image{
     width: 100%;
