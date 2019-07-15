@@ -7,17 +7,14 @@
   <div class="container med-top-margin">
 
     <div class="row valign-wrapper" style="text-align: center;">
-      <div class="col s3">
+      <div class="col s4">
         <p>DATE</p>
       </div>
-      <div class="col s3">
+      <div class="col s4">
         <p>LOCATION</p>
       </div>
-      <div class="col s3">
+      <div class="col s4">
         <p>EVENT</p>
-      </div>
-      <div class="col s3">
-        <p>TICKETS</p>
       </div>
     </div>
 
@@ -25,17 +22,14 @@
 
     <div *ngFor="let event of upcoming">
       <div class="row valign-wrapper hoverable" style="text-align: center;">
-        <div class="col s3">
-          <p>{{event.date}}</p>
+        <div class="col s4">
+          <p><a class='black-text' href={{event.tickets}} target="_blank">{{event.date}}</a></p>
         </div>
-        <div class="col s3">
-          <p>{{event.location}}, {{event.city}}</p>
+        <div class="col s4">
+          <p><a class='black-text' href={{event.tickets}} target="_blank">{{event.location}}, {{event.city}}</a></p>
         </div>
-        <div class="col s3">
-          <p>{{event.event}}</p>
-        </div>
-        <div class="col s3 black-text">
-          <p><a class='black-text' href={{event.tickets}} target="_blank">PURCHASE TICKETS</a></p>
+        <div class="col s4">
+          <p><a class='black-text' href={{event.tickets}} target="_blank">{{event.event}}</a></p>
         </div>
       </div>
     </div>
