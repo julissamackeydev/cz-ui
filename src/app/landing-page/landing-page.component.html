@@ -3,7 +3,8 @@
     <div class="row landing-page-background"></div>
     <div class="row landing-page-height">
       <div class="col s6 white-text landing-page-background" style="height:100%">
-        <h1>CHRISTIAN ZAREMBA</h1><h2>BASSO  CANTANTE</h2>
+        <h1>CHRISTIAN ZAREMBA</h1>
+        <h2>BASSO CANTANTE</h2>
         <br>
         <br>
         <h3>{{location}}</h3>
@@ -19,7 +20,7 @@
   </div>
 </div>
 
-<div class="container full-height">
+<div class="container med-top-margin" style='padding-bottom:7%;'>
   <h1 style="text-align: center;">UPCOMING PERFORMANCES</h1>
   <div class="row valign-wrapper" style="text-align: center;">
     <div class="col s3">
@@ -57,7 +58,7 @@
 
 </div>
 
-<div class="landing-page-background light-text full-height">
+<div class="landing-page-background light-text" style='padding-bottom:7%;'>
   <div class="container">
     <h1>Christian Zaremba | BASSO CANTANTE</h1>
     <div class="bio-text" *ngFor="let paragraph of bioContent">
@@ -68,46 +69,54 @@
 
 <div class='full-height'>
   <h1 class="cz-red-text">IN THE NEWS</h1>
-  <div class="row med-top-margin left-margin">
+  <div class="row lesser-top-margin left-margin">
 
-    <div class="col s3 latest-block">
-      <p class="latest-text">TITLE</p>
-      <p class="latest-text">DATE</p>
+
+    <div class="col s3 latest-block" id={{newsClips[0].image}}>
+      <p class='latest-text'>{{newsClips[0].description}}</p>
+      <p class='latest-text'>{{newsClips[0].date}}</p>
       <div class="overlay">
-        <p class=' btn-flat latest-text' routerLink="/details/title">READ MORE</p>
+        <p class=' btn-flat latest-text' [routerLink]="['/details/', newsClips[0]._id.$oid]">READ MORE</p>
       </div>
     </div>
 
-    <div class="col s3 latest-block">
-      <p class="latest-text">TITLE</p>
-      <p class="latest-text">DATE</p>
+    <div class="col s3 latest-block" id={{newsClips[1].image}}>
+      <p class='latest-text'>{{newsClips[1].description}}</p>
+      <p class='latest-text'>{{newsClips[1].date}}</p>
       <div class="overlay">
-        <p class=' btn-flat latest-text' routerLink="/details/title">READ MORE</p>
+        <p class=' btn-flat latest-text' [routerLink]="['/details/', newsClips[1]._id.$oid]">READ MORE</p>
       </div>
     </div>
 
-    <div class="col s3 latest-block">
-      <p class="latest-text">TITLE</p>
-      <p class="latest-text">DATE</p>
+    <div class="col s3 latest-block" id={{newsClips[2].image}}>
+      <p class='latest-text'>{{newsClips[2].description}}</p>
+      <p class='latest-text'>{{newsClips[2].date}}</p>
       <div class="overlay">
-        <p class=' btn-flat latest-text' routerLink="/details/title">READ MORE</p>
+        <p class=' btn-flat latest-text' [routerLink]="['/details/', newsClips[2]._id.$oid]">READ MORE</p>
       </div>
     </div>
-
   </div>
+
   <div class="divider red"></div>
   <div class="row">
-    <h1 class='cz-red-text' style="text-align:right;">RECENT REVIEWS</h1>
-  </div>
-  <div class="container">
-    <div class="row cz-red-text" style="font-style:italic">
-      <p class="col s2">A REVIEW...</p>
-      <p class="col s2">A REVIEW...</p>
-      <p class="col s2">A REVIEW...</p>
-      <p class="col s2">A REVIEW...</p>
-      <p class="col s2">A REVIEW...</p>
+    <div class="col s7">
+      <div class="row cz-red-text" style="font-style:italic">
+        <div class="col s4 med-top-margin">
+          <p></p>
+        </div>
+        <div class="col s4 med-top-margin">
+          <p>{{featuredReviews[0].review}}</p>
+          <p> - {{featuredReviews[0].source}}</p>
+        </div>
+        <div class="col s4 med-top-margin">
+          <p>{{featuredReviews[1].review}}</p>
+          <p> - {{featuredReviews[1].source}}</p>
+        </div>
+      </div>
     </div>
+    <h1 class='cz-red-text col s4' style="text-align:right;">RECENT REVIEWS</h1>
   </div>
+
 </div>
 
 

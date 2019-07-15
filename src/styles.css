@@ -78,11 +78,6 @@ body{
 .sticky + .content {
     padding-top: 40px;
 }
-.size{
-
-    min-height:20.31px;
-    max-height:220.31px;
-}
 .latest-block{
     top: 10%;
     margin-top: 30px;
@@ -137,17 +132,72 @@ body{
  }
 .gallery-thumbnail{
     background-color: #990000;
-    width: 250px;
-    height: auto;
+    width: 100%;
+    height: 520.31px;
 } 
 .album-name:hover{
     color:white;
 }
 .page-footer{
+    max-height: 80px;
     background-color: #990000;
 }
 .landing-page-background-image{
     background-image: url('../src/assets/SoundBitesZarembalg1217.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+#pavan{
+    background-image: url('../src/assets/pavan/Christian_Z-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#don-giovanni-venture{
+    background-image: url('../src/assets/don-giovanni-venture/don-giovanni-venture.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#portland-difficulty{
+    background-image: url('../src/assets/portland-cory-weaver-difficulty-of-crossing-a-field/andrew.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#pistola-prelude{
+    background-image: url('../src/assets/falstaff-prelude/pistola-prelude.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#j-d-l-rigoletto{
+    background-image: url('../src/assets/j-david-levy-rigoletto-st-louis/20190530_1458.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#hoebermann{
+    background-image: url('../src/assets/hoebermann/drama.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#elise-bakketun-pearl-fishers{
+    background-image: url('../src/assets/elise-bakketun-pearl-fishers/thumbnail-4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#dario-acosta-opera-news{
+    background-image: url('../src/assets/dario-acosta-opera-news/SoundBitesChristianZarembahdl1217.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#tosca-metropolitan-opera{
+    background-image: url('../src/assets/tosca-metropolitan-opera/screenshot.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }

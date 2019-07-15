@@ -11,7 +11,7 @@ export class AcclaimComponent implements OnInit {
   featuredReviews = [
     {
       "source": "Opera News",
-      "review": "Commissioner Kenesaw “Mountain” Landis who’s portrayed by bass Christian Zaremba as a thundering Old testament figure in flowing judicial robes",
+      "review": "Commissioner Kenesaw “Mountain” Landis who’s portrayed by bass Christian Zaremba as a thundering Old testament figure in flowing judicial robes.",
       "date": "",
       "performance": "THE FIX"
     },

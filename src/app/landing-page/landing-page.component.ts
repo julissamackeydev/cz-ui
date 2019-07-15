@@ -71,6 +71,44 @@ export class LandingPageComponent implements OnInit {
   `In the 2018-2019 season, Mr. Zaremba returns to The Metropolitan for productions of Gianni Schicchi and Tosca before greeting the New Year with a return to Austin Opera as the French General in Silent Night and to Minnesota Opera as Mountain Landis in the world premier of The Fix by Joel Puckett.  He then makes debuts with The Lyric Opera of Kansas City as Nouribad in Les pêcheurs des perles and reprises his Sparafucile in Rigoletto with Opera Theatre of St. Louis.`,
   
   `Future seasons will see him join the cast of Agrippina at the Royal Opera House in London, as Colline in La bohème with Lyric Opera of Kansas City, Lesbo in Agrippina with the Metropolitan Opera, Sparafucile in Rigoletto with Nashville Opera, Sarastro in Die Zauberflöte with Opéra de Montreal, and in a much-anticipated titular role debut with Austin Opera.`];
+  newsClips = [
+    {
+    "_id": { "$oid": "roya-opera" },
+    "description": "AGRIPPINA AT ROYAL OPERA",
+    "date": "JUL 11 2019",
+    "content": "Christian has recently been invited to the Royal Opera House in London to join the cast of Agrippina, which includes Joyce DiDonato, Franco Fagioli, and Ierstyn Davies.   Maxim Emelyanychev conducts.",
+    "image": "convent-garden",
+    },
+    {
+    "_id": { "$oid": "st-louis" },
+    "description": "AS A HIRED ASSASSIN...",
+    "date": "JUL 11 2019",
+    "content": "In review of Opera Theater of St. Louis’ Rigoletto, Broadway World notes, “Christian Zaremba is gracefully menacing as Sparafucile, the hired assassin. On his exit at the end of one scene he holds an almost sub-sonic bass note practically forever.  Read the full review here: ",
+    "link" : "https://www.broadwayworld.com/bwwopera/article/BWW-Review-A-Glorious-RIGOLETTO-Opens-at-Opera-Theatre-St-Louis-20190604",
+    "image": "sparafucille-rigoletto"
+    },
+    {
+    "_id": { "$oid": "mussorgsky" },
+    "description": "SONGS & DANCES OF DEATH",
+    "date": "JUL 11 2019",
+    "content": "Christian will sing Modest Mussorgski’s famous song cycle for bass, Songs and Dances of Death, with the Greenwich Symphony in late November 2019.  Please check later for scheduling updates.",
+    "image": "mussorgsky"
+    }
+  ];
+  featuredReviews = [
+    {
+      "source": "Opera News",
+      "review": "Commissioner Kenesaw “Mountain” Landis who’s portrayed by bass Christian Zaremba as a thundering Old testament figure in flowing judicial robes.",
+      "date": "",
+      "performance": "THE FIX"
+    },
+    {
+      "source": "Broadway World",
+      "review": "Christian Zaremba is gracefully menacing as Sparafucile, the hired assassin. On his exit at the end of one scene he holds an almost sub-sonic bass note practically forever.",
+      "date": "",
+      "performance": "RIGOLETTO"
+    }
+  ]
   ngOnInit() {
   }
 

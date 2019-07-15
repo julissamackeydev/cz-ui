@@ -1,46 +1,31 @@
 <div class="row">
-  <app-nav-bar class=" col s12 sticky"></app-nav-bar>
+  <app-nav-bar class=" col s12"></app-nav-bar>
 </div>
 
-<div class="landing-page-background full-height med-top-margin white-text">
+<div class="landing-page-background med-top-margin white-text">
   <div class="container">
     <div class="row">
-     
       <!-- images -->
-      <div class="col s6 gallery-images">
+      <div class="gallery-images">
         <div class="row">
-          <h5 class="col s12" style="text-align:right;">ALBUMS</h5>
-          <h6 class="col s12 btn-flat white-text" style="text-align:right;">SEE ALL ALBUMS</h6>
+          <h5 class="col s12" style="text-align:center;">ALBUMS & VIDEOS</h5>
         </div>
-        <div class="row">
-          <div class="gallery-thumbnail" style="float: right;">
-          <p style="text-align:center;">IMAGE</p>
-          <p class="btn-flat album-name" style="text-align:center;">ALBUM DESCRIPTION</p>
+        <div class="video-container">
+            <iframe width="560" height="315"  src="https://www.youtube.com/embed/Mq9XRspIXJ0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+        <div *ngFor="let album of albums" >
+          <div class="col s4">
+            <div class="gallery-thumbnail lesser-top-margin" style="float: right; text-align:center; margin-bottom:12%;" id={{album._id.$oid}}>
+                <h5 class="btn-flat album-name white-text" >{{album.description}}</h5>
+              </div>
+          </div>
         </div>
       </div>
-      
-      <!-- videos -->
-      <div class="col s6 gallery-videos">
-        <div class="row">
-          <h5 class="col s12" style="text-align: left;">VIDEOS</h5>
-          <h6 class="col s12 btn-flat white-text" style="text-align: left;">SEE ALL VIDEOS</h6>
-        </div>
-        <div class="row">
-          <div style="margin-left:2%" class="gallery-thumbnail">
-          <p style="text-align:center;">VIDEO</p>
-          <p style="text-align:center;" class="btn-flat album-name">VIDEO DESCRIPTION</p>
-        </div>
-        </div>
-      </div>
-
-
     </div>
 
-    <div class="row">
-        <h5 class="col s12" style="text-align: center; margin-top:30%;">CONNECT ON INSTAGRAM</h5>
-    </div>
   </div>
 </div>
 
-<app-footer></app-footer>
+<app-footer style="
+bottom: 0;
+width: 100%;"></app-footer>

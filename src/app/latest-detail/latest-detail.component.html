@@ -2,13 +2,19 @@
   <app-nav-bar class=" col s12 sticky"></app-nav-bar>
 </div>
 
-<div class="full-height landing-page-background lesser-top-margin detail-text" style="text-align: center;">
-  <div class=container>
-      <h1>IMAGE</h1>
-      <h1>TITLE</h1>
-      <p>{{snippet}}</p>
-      <h6>DATE</h6>
+<div class="landing-page-background med-top-margin detail-text ">
+  <h1>{{currentPiece.description}}</h1>
+  <div class="row">
+    <div class="col s3"></div>
+    <div class="col s6" style="font-size: larger">
+      <p>{{currentPiece.content}}</p>
+      <h6>{{currentPiece.date}}</h6>
+    </div>
+    <div class="col s3" id='sparafucille-rigoletto'>
+    </div>
   </div>
 </div>
 
-<app-footer></app-footer>
+<app-footer style="position: fixed;
+bottom: 0;
+width: 100%;"></app-footer>
