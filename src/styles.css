@@ -201,3 +201,8 @@ body{
     background-size: cover;
     background-position: center;
 }
+.landing-page-background-image-mobile{
+    background-image: url('../src/assets/SoundBitesZarembalgMobileBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
