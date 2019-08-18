@@ -33,7 +33,7 @@ export class CalendarComponent implements OnInit {
         "_id": {
             "$oid": "5cd8a219d38f5a51aeb17aa3"
         },
-        "date": "DEC 23 2019 - MAR 7 2020",
+        "date": "DEC 23 - MAR 7 2020",
         "location": "METROPOLITAN OPERA",
         "city": "NEW YORK CITY",
         "event": "AGRIPPINA",

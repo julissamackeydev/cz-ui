@@ -1,16 +1,6 @@
-<div class="row">
-  <app-nav-bar class=" col s12 sticky"></app-nav-bar>
+<div class="container blue-grey-text text-darken-4">
+  <p class='title center-align blue-grey darken-3 white-text'>ABOUT CHRISTIAN </p>
+  <div *ngFor="let paragraph of content">
+    <p class="flow-text left-align mass-text">{{paragraph}}</p>
+  </div>
 </div>
-<div class="landing-page-background light-text med-top-margin full-height">
-    <div class="container">
-      <h1>Christian Zaremba | BASSO CANTANTE </h1>
-        <div class="bio-text">
-          <div *ngFor="let paragraph of content">
-            <p>{{paragraph}}</p>
-          </div>
-      
-        </div>
-      </div>
-</div>
-
-<app-footer></app-footer>
