@@ -1,234 +1,34 @@
-<div class="full-height hide-on-small-only" style="max-width: 100%; min-width:100%">
-  <div class="parallax-container">
-    <div class="row landing-page-background"></div>
-    <div class="row landing-page-height">
-      <div class="col s6  white-text landing-page-background" style="height:100%">
-        <h1>CHRISTIAN ZAREMBA</h1>
-        <h2>BASSO CANTANTE</h2>
-        <br>
-        <br>
-        <h3>{{location}}</h3>
-        <h3>{{opera}}</h3>
-        <h6>{{startDate}} - {{endDate}}</h6>
-        <h5><a class="btn-flat red-text" href={{tickets}} target="_blank">PURCHASE TICKETS</a></h5>
-      </div>
-      <div class="col s6 landing-page-background-image" style="height:100%"></div>
+<div class='container'>
+    <p class='blue-grey-text text-darken-3 center-align subtitle'>BASSO CANTANTE</p>
+    <img src="assets/svg.svg">
+    <p style='font-size:1rem; margin-left:5%; margin-bottom:-3%;'class='blue-grey-text text-darken-3'>UP NEXT:</p>
+    <div class='row valign-wrapper hide-on-small-only'>
+        <p class='blue-grey-text text-darken-3  col m6 offset-m1' style='font-size:3rem'>{{opera}}</p>
+        <blockquote class='blue-grey-text text-darken-3 col m5 offset-m1' style="margin-top: 0;">
+            {{location}}<br>
+            {{startDate}} - {{endDate}}<br>
+            <a class="cz-red-text" href={{tickets}} target="_blank" style="margin-top: 0;">PURCHASE TICKETS</a>
+        </blockquote>
     </div>
-    <div class="row hide-on-med-and-down">
-      <app-nav-bar></app-nav-bar>
-    </div>
-  </div>
-</div>
-
-<div class="hide-on-med-and-up full-height landing-page-background-image-mobile">
-    <div>
-      <h1 class="white-text" style='text-align: right;'>CHRISTIAN ZAREMBA</h1>
-      <h2 class="white-text"style='text-align: center;'>BASSO CANTANTE</h2>
-      <br>
-      <br>
-      <h3>{{location}}</h3>
-      <h3>{{opera}}</h3>
-      <h6>{{startDate}} - {{endDate}}</h6>
-      <h5><a class="btn-flat red-text" href={{tickets}} target="_blank">PURCHASE TICKETS</a></h5>
+    <div class='show-on-small hide-on-med-and-up'>
+        <div class='row blue-grey-text text-darken-3'>
+            <p class='col s4' style='font-size: 2rem;'>{{opera}}</p>
+            <p class='col s8 flow-text right-align'>{{location}}<br>{{startDate}} - {{endDate}}<br>
+                <a class="cz-red-text" href={{tickets}} target="_blank" style="margin-top: 0;">PURCHASE TICKETS</a></p>
+        </div>
+        <!-- <div class='row valign-wrapper'>
+            <p class='blue-grey-text text-darken-3 col s12 flow-text right-align' style="margin-top: 0;">
+                {{startDate}} - {{endDate}}<br>
+                <a class="cz-red-text" href={{tickets}} target="_blank" style="margin-top: 0;">PURCHASE TICKETS</a>
+            </p>
+        </div> -->
     </div>
 </div>
 
-<div class="container med-top-margin hide-on-small-only" style='padding-bottom:7%;'>
-  <h1 style="text-align: center;">UPCOMING PERFORMANCES</h1>
-  <div class="row valign-wrapper" style="text-align: center;">
-    <div class="col s4">
-      <p>DATE</p>
-    </div>
-    <div class="col s4">
-      <p>LOCATION</p>
-    </div>
-    <div class="col s4">
-      <p>EVENT</p>
-    </div>
-  </div>
-
-  <div class="divider red"></div>
-
-  <div *ngFor="let event of upcoming">
-    <div class="row valign-wrapper hoverable" style="text-align: center;">
-      <div class="col s4">
-        <p><a class='black-text' href={{event.tickets}} target="_blank">{{event.date}}</a></p>
-      </div>
-      <div class="col s4">
-        <p><a class='black-text' href={{event.tickets}} target="_blank">{{event.location}}, {{event.city}}</a></p>
-      </div>
-      <div class="col s4">
-        <p><a class='black-text' href={{event.tickets}} target="_blank">{{event.event}}</a></p>
-      </div>
-    </div>
-  </div>
-
-</div>
-<div class="hide-on-med-and-up divider black"></div>
-<div class="container hide-on-med-and-up" style='padding-bottom:7%;'>
-    <h1 style="text-align: center;">UPCOMING PERFORMANCES</h1>
-    <div class="row valign-wrapper" style="text-align: center;">
-      <div class="col s4">
-        <p>DATE</p>
-      </div>
-      <div class="col s4">
-        <p>LOCATION</p>
-      </div>
-      <div class="col s4">
-        <p>EVENT</p>
-      </div>
-    </div>
-  
-    <div class="divider red"></div>
-  
-    <div *ngFor="let event of upcoming">
-      <div class="row valign-wrapper hoverable" style="text-align: center;">
-        <div class="col s4">
-          <p><a class='black-text' href={{event.tickets}} target="_blank">{{event.date}}</a></p>
-        </div>
-        <div class="col s4">
-          <p><a class='black-text' href={{event.tickets}} target="_blank">{{event.location}}, {{event.city}}</a></p>
-        </div>
-        <div class="col s4">
-          <p><a class='black-text' href={{event.tickets}} target="_blank">{{event.event}}</a></p>
-        </div>
-      </div>
-    </div>
-  
-  </div>
-
-<div class="landing-page-background light-text" style='padding-bottom:7%;'>
-  <div class="container">
-    <h1>Christian Zaremba | BASSO CANTANTE</h1>
-    <div class="bio-text" *ngFor="let paragraph of bioContent">
-      <p>{{paragraph}}</p>
-    </div>
-  </div>
-</div>
-
-<div class='full-height hide-on-small-only'>
-  <h1 class="cz-red-text">IN THE NEWS</h1>
-  <div class="row lesser-top-margin left-margin">
-
-
-    <div class="col s3 latest-block" id={{newsClips[0].image}}>
-      <p class='latest-text'>{{newsClips[0].description}}</p>
-      <p class='latest-text'>{{newsClips[0].date}}</p>
-      <div class="overlay">
-        <p class=' btn-flat latest-text' [routerLink]="['/details/', newsClips[0]._id.$oid]">READ MORE</p>
-      </div>
-    </div>
-
-    <div class="col s3 latest-block" id={{newsClips[1].image}}>
-      <p class='latest-text'>{{newsClips[1].description}}</p>
-      <p class='latest-text'>{{newsClips[1].date}}</p>
-      <div class="overlay">
-        <p class=' btn-flat latest-text' [routerLink]="['/details/', newsClips[1]._id.$oid]">READ MORE</p>
-      </div>
-    </div>
-
-    <div class="col s3 latest-block" id={{newsClips[2].image}}>
-      <p class='latest-text'>{{newsClips[2].description}}</p>
-      <p class='latest-text'>{{newsClips[2].date}}</p>
-      <div class="overlay">
-        <p class=' btn-flat latest-text' [routerLink]="['/details/', newsClips[2]._id.$oid]">READ MORE</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="divider red"></div>
-  <div class="row">
-    <div class="col s7">
-      <div class="row cz-red-text" style="font-style:italic">
-        <div class="col s4 med-top-margin">
-          <p></p>
-        </div>
-        <div class="col s4 med-top-margin">
-          <p>{{featuredReviews[0].review}}</p>
-          <p> - {{featuredReviews[0].source}}</p>
-        </div>
-        <div class="col s4 med-top-margin">
-          <p>{{featuredReviews[1].review}}</p>
-          <p> - {{featuredReviews[1].source}}</p>
-        </div>
-      </div>
-    </div>
-    <h1 class='cz-red-text col s4' style="text-align:right;">RECENT REVIEWS</h1>
-  </div>
-</div>
-
-
-<div class='full-height hide-on-med-and-up'>
-    <h1 class="cz-red-text" style="text-align: center">IN THE NEWS</h1>
-    <div class="row lesser-top-margin left-margin">
-  
-  
-      <div class="col s3 latest-block" id={{newsClips[0].image}}>
-        <p class='latest-text'>{{newsClips[0].description}}</p>
-        <p class='latest-text'>{{newsClips[0].date}}</p>
-        <div class="overlay">
-          <p class=' btn-flat latest-text' [routerLink]="['/details/', newsClips[0]._id.$oid]">READ MORE</p>
-        </div>
-      </div>
-  
-      <div class="col s3 latest-block" id={{newsClips[1].image}}>
-        <p class='latest-text'>{{newsClips[1].description}}</p>
-        <p class='latest-text'>{{newsClips[1].date}}</p>
-        <div class="overlay">
-          <p class=' btn-flat latest-text' [routerLink]="['/details/', newsClips[1]._id.$oid]">READ MORE</p>
-        </div>
-      </div>
-  
-      <div class="col s3 latest-block" id={{newsClips[2].image}}>
-        <p class='latest-text'>{{newsClips[2].description}}</p>
-        <p class='latest-text'>{{newsClips[2].date}}</p>
-        <div class="overlay">
-          <p class=' btn-flat latest-text' [routerLink]="['/details/', newsClips[2]._id.$oid]">READ MORE</p>
-        </div>
-      </div>
-    </div>
-  
-    <div class="divider red"></div>
-    <div class="row">
-        <h1 class='cz-red-text' style="text-align:center;">RECENT REVIEWS</h1></div>
-      <div class='row'>
-        <div class="cz-red-text" style="font-style:italic">
-          <div class="col s6">
-            <p>{{featuredReviews[0].review}}</p>
-            <p> - {{featuredReviews[0].source}}</p>
-          </div>
-          <div class="col s6">
-            <p>{{featuredReviews[1].review}}</p>
-            <p> - {{featuredReviews[1].source}}</p>
-          </div>
-        </div>
-    </div>
-  </div>
-
-<div class="landing-page-background med-top-margin white-text">
-  <div class="container">
-    <div class="row">
-      <!-- images -->
-      <div class="gallery-images">
-        <div class="row">
-          <h5 class="col s12" style="text-align:center;">ALBUMS & VIDEOS</h5>
-        </div>
-        <div class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Mq9XRspIXJ0" frameborder="0"
-            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div *ngFor="let album of albums">
-          <div class="col s4">
-            <div class="gallery-thumbnail lesser-top-margin" style="float: right; text-align:center; margin-bottom:12%;"
-              id={{album._id.$oid}}>
-              <h5 class="btn-flat album-name white-text">{{album.description}}</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<app-footer></app-footer>
+<div class='divider'></div>
+<app-calendar></app-calendar>
+<div class='divider'></div>
+<app-bio></app-bio>
+<app-latest></app-latest>
+<app-acclaim></app-acclaim>
+<!-- <app-gallery></app-gallery> -->

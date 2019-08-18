@@ -1,46 +1,33 @@
-<div class="light-background full-height">
-
-  <div class="row">
-    <app-nav-bar class=" col s12 sticky"></app-nav-bar>
+<div class="container blue-grey-text text-darken-3">
+  <p style='font-size: 1.7rem' class="flowtext center-align">UPCOMING PERFORMANCES</p>
+  <div class="row valign-wrapper center-align grey lighten-1" style="margin-bottom:0;">
+    <div class="col s4">
+      <p>DATE</p>
+    </div>
+    <div class="col s4">
+      <p>LOCATION</p>
+    </div>
+    <div class="col s4">
+      <p>EVENT</p>
+    </div>
   </div>
 
-  <div class="container med-top-margin">
+  <div class="divider cz-red-text"></div>
 
-    <div class="row valign-wrapper" style="text-align: center;">
-      <div class="col s4">
-        <p>DATE</p>
+  <div *ngFor="let event of upcoming">
+    <div class="row  event center-align" >
+      <div class="col s4 truncate">
+        <p><a  href={{event.tickets}} target="_blank">{{event.date}}</a></p>
       </div>
-      <div class="col s4">
-        <p>LOCATION</p>
-      </div>
-      <div class="col s4">
-        <p>EVENT</p>
-      </div>
-    </div>
-
-    <div class="divider red"></div>
-
-    <div *ngFor="let event of upcoming">
-      <div class="row valign-wrapper hoverable" style="text-align: center;">
-        <div class="col s4">
-          <p><a class='black-text' href={{event.tickets}} target="_blank">{{event.date}}</a></p>
-        </div>
-        <div class="col s4">
-          <p><a class='black-text' href={{event.tickets}} target="_blank">{{event.location}}, {{event.city}}</a></p>
-        </div>
-        <div class="col s4">
-          <p><a class='black-text' href={{event.tickets}} target="_blank">{{event.event}}</a></p>
-        </div>
+      <div class="col s4 truncate">
+        <p><a  href={{event.tickets}} target="_blank">{{event.location}}, {{event.city}}</a></p>
+      </div> 
+      <div class="col s3 truncate">
+        <p><a class='blue-grey-text text-darken-3' href={{event.tickets}} target="_blank">{{event.event}}</a></p>
       </div>
     </div>
-
-
-
-
-
   </div>
+
+
+
 </div>
-
-<app-footer style="position: fixed;
-bottom: 0;
-width: 100%;"></app-footer>

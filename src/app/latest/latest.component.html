@@ -1,28 +1,12 @@
-<div class="row">
-  <app-nav-bar class=" col s12 sticky"></app-nav-bar>
-</div>
+<div class="container">
 
-<div class='landing-page-background full-height'>
-
-
-
-  <div class="row med-top-margin left-margin size">
-
+  <p class='title center-align blue-grey darken-3 white-text'>IN THE NEWS </p>
+  
+  <div class="row center-align">
     <div *ngFor="let clip of clips">
-      <div class="col s3 latest-block" id={{clip.image}}>
-        <p class="latest-text">{{clip.description}}</p>
-        <p class="latest-text">{{clip.date}}</p>
-        <div class="overlay">
-          <p class=' btn-flat latest-text' [routerLink]="['/details/', clip._id.$oid]">READ MORE</p>
-        </div>
-      </div>
-
+      <div class="col s12 m4 latest-block" [routerLink]="['/details/', clip._id.$oid]">
+        <img class='latest-image'style='width: 100%;'[src]="clip.image">
+        <p class="latest-text flow-text truncate">{{clip.description}}<br>{{clip.date}}</p>
     </div>
-
   </div>
-
 </div>
-
-<app-footer style="position: fixed;
-bottom: 0;
-width: 100%;"></app-footer>

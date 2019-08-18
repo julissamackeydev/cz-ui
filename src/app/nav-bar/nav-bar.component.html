@@ -1,12 +1,20 @@
-<div class="col s12">
-  <div class="row">
-    <div class="nav-text white">
-      <p class="col s1 red-text" routerLink="/">CZ</p>
-      <p class="col s2 dark-text btn-flat" routerLink="/calendar">CALENDAR</p><p class='col s1'></p>
-      <p class="col s2 dark-text btn-flat" routerLink="/gallery">GALLERY</p>
-      <p class="col s1 dark-text btn-flat" routerLink="/bio">BIO</p>
-      <p class="col s1 dark-text btn-flat" routerLink="/latest">NEWS</p><p class='col s1'></p>
-      <p class="col s1 dark-text btn-flat" routerLink="/acclaim">ACCLAIM</p>
+<header>
+<ul id="mobile-nav" class="dropdown-content white z-depth-0">
+  <li><a class='blue-grey-text text-darken-3' [routerLink]="['/calendar']">CALENDAR</a></li>
+  <!-- <li><a class='blue-grey-text text-darken-3' [routerLink]="['/gallery']">GALLERY</a></li> -->
+  <li><a class='blue-grey-text text-darken-3' [routerLink]="['/bio']">BIOGRAPHY</a></li>
+  <li><a class='blue-grey-text text-darken-3' [routerLink]="['/latest']">LATEST NEWS</a></li>
+  <li><a class='blue-grey-text text-darken-3' [routerLink]="['/acclaim']">ACCLAIM</a></li>
+</ul>
+<div class='navbar-fixed'>
+  <nav class='white z-depth-0'>
+    <div class="nav-wrapper ">
+      <a class='brand-logo truncate blue-grey-text text-darken-3 center' [routerLink]="['/']">CHRISTIAN ZAREMBA</a>
+      <ul id='nav-mobile' class='right'>
+        <li><a class="dropdown-trigger blue-grey-text text-darken-3" href="#!" data-target="mobile-nav"><i style='font-size: 2.3rem'class="material-icons right">more_vert</i></a>
+        </li>
+      </ul>
     </div>
-  </div>
+  </nav>
 </div>
+</header>
