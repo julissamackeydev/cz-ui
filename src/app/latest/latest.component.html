@@ -6,7 +6,7 @@
     <div *ngFor="let clip of clips">
       <div class="col s12 m4 latest-block" [routerLink]="['/details/', clip._id.$oid]">
         <img class='latest-image'style='width: 100%;'[src]="clip.image">
-        <p class="latest-text flow-text truncate">{{clip.description}}<br>{{clip.date}}</p>
+        <p class="latest-text flow-text truncate">{{clip.description}}</p>
     </div>
   </div>
 </div>
