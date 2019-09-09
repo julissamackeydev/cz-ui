@@ -29,7 +29,7 @@ export class LatestDetailComponent implements OnInit {
     "description": "SONGS & DANCES OF DEATH",
     "date": "SEPT 3 2019",
     "source": "BROADWAY WORLD",
-    "content": "On Sunday, November 24, 2019 at 3:00pm at All Saints Church, GVO (The Greenwich Village Orchestra) joins forces withMetropolitan Opera bass Christian Zaremba in Defying Death, a program featuringMussorgsky's Songs and Dances of Death, orchestrated by Shostakovich. Rounding out the program, the GVO brings to life Rimsky-Korsakov's rich musical tapestry Scheherazade andProkofiev's evocative ballet music from The Love for Three Oranges.",
+    "content": "On Sunday, November 24, 2019 at 3:00pm at All Saints Church, GVO (The Greenwich Village Orchestra) joins forces with Metropolitan Opera bass Christian Zaremba in Defying Death, a program featuringMussorgsky's Songs and Dances of Death, orchestrated by Shostakovich. Rounding out the program, the GVO brings to life Rimsky-Korsakov's rich musical tapestry Scheherazade andProkofiev's evocative ballet music from The Love for Three Oranges.",
     "image": "assets/mussorgsky.svg"
     }
   ];
