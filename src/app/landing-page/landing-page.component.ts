@@ -8,22 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class LandingPageComponent implements OnInit {
 
   constructor() { }
-  location = `ROYAL OPERA HOUSE, UK`;
-  opera = `AGRIPPINA`;
-  startDate = `AUGUST 19`;
-  endDate = ` OCTOBER 12`;
-  tickets = `https://www.roh.org.uk/`;
+  location = `LYRIC OPERA, KANSAS CITY`;
+  opera = `LA BOHEME`;
+  startDate = `OCTOBER 19`;
+  endDate = ` NOVEMBER 17`;
+  tickets = `https://kcopera.org/`;
   upcoming = [
-    {
-        "_id": {
-            "$oid": "5cd8a219d38f5a51aeb17aa3"
-        },
-        "date": "AUG 19 - OCT 12 2019",
-        "location": "ROYAL OPERA HOUSE",
-        "city": "LONDON",
-        "event": "AGRIPPINA",
-        "tickets": "https://www.roh.org.uk/"
-    },
     {
         "_id": {
             "$oid": "5cd8a219d38f5a51aeb17aa3"

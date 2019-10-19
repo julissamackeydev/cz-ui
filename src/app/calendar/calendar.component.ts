@@ -13,16 +13,6 @@ export class CalendarComponent implements OnInit {
         "_id": {
             "$oid": "5cd8a219d38f5a51aeb17aa3"
         },
-        "date": "AUG 19 - OCT 12 2019",
-        "location": "ROYAL OPERA HOUSE",
-        "city": "LONDON",
-        "event": "AGRIPPINA",
-        "tickets": "https://www.roh.org.uk/"
-    },
-    {
-        "_id": {
-            "$oid": "5cd8a219d38f5a51aeb17aa3"
-        },
         "date": "OCT 19 - NOV 17 2019",
         "location": "LYRIC OPERA",
         "city": "KANSAS CITY",
