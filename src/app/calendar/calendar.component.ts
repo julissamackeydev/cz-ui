@@ -8,18 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CalendarComponent implements OnInit {
   
   constructor() { }
-  upcoming = [
-    {
-        "_id": {
-            "$oid": "5cd8a219d38f5a51aeb17aa3"
-        },
-        "date": "AUG 19 - OCT 12 2019",
-        "location": "ROYAL OPERA HOUSE",
-        "city": "LONDON",
-        "event": "AGRIPPINA",
-        "tickets": "https://www.roh.org.uk/"
-    },
-    {
+  upcoming = [{
         "_id": {
             "$oid": "5cd8a219d38f5a51aeb17aa3"
         },
