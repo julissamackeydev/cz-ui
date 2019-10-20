@@ -9,16 +9,26 @@
       allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
-  <div class="row">
+  <div class="row center-align hide-on-large">
+    <div *ngFor="let image of images" >
+      <img [src]="image" class="materialbox" width="100%">
+    </div>
+  </div>
+  <div class="row center-align hide-on-med-and-down">
+    <div *ngFor="let image of images" >
+      <img [src]="image" class="materialbox" width="75%">
+    </div>
+  </div>
+  <!-- <div class="row">
       <div *ngFor="let image of images" style='display: inline;'>
       <div class="col s4">
-        <div class="card">
+        <div class="card large">
           <div class="card-image">
             <img [src]="image">
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 </div>
