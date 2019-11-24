@@ -8,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class GalleryComponent implements OnInit {
   constructor() { }
   images=[
-    'assets/bakkuten2.svg',
-    'assets/bakketun1.svg',
-    'assets/bakkuten3.svg',
+    'assets/coryweaver.svg',
+    // 'assets/bakkuten2.svg',
+    // 'assets/bakketun1.svg',
+    // 'assets/bakkuten3.svg',
     'assets/rigolettostlouis1.svg',
     'assets/rigolettostlouis2.svg',
     'assets/tosca.jpg',
@@ -18,7 +19,6 @@ export class GalleryComponent implements OnInit {
     'assets/fanciullaomaha2.svg',
     'assets/fancuillaomaha1.svg',
     // 'assets/glimmerglass.svg',
-    'assets/coryweaver.svg',
     'assets/magicflute1.svg',
     'assets/magicflute2.svg',
     // 'assets/pistola.svg',
