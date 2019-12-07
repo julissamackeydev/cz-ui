@@ -139,6 +139,18 @@ blockquote{
     background-color: #990000;
     color: white !important; 
 }
+.prevevent{
+    background-color: #021226;
+    color: white;
+    line-height: 0;
+}
+.prevevent a{
+    color:white;
+}
+.prevevent:hover, .prevevent:hover a{
+    background-color: #021226;
+    color: white !important; 
+}
 .title{
     font-size: 2rem;
 }
