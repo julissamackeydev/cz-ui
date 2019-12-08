@@ -7,26 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
   constructor() { }
-  images=[
+  selectedImage = ""
+  images = [
     'assets/coryweaver.svg',
-    // 'assets/bakkuten2.svg',
-    // 'assets/bakketun1.svg',
-    // 'assets/bakkuten3.svg',
     'assets/rigolettostlouis1.svg',
     'assets/rigolettostlouis2.svg',
     'assets/tosca.jpg',
     'assets/fanciullamno.svg',
     'assets/fanciullaomaha2.svg',
     'assets/fancuillaomaha1.svg',
-    // 'assets/glimmerglass.svg',
     'assets/magicflute1.svg',
     'assets/magicflute2.svg',
-    // 'assets/pistola.svg',
     'assets/rapeoflucretia.svg',
     'assets/rapeoflucretia2.svg',
     'assets/soundbites1.svg',
     'assets/soundbites2.svg',
-    // 'assets/ventureopera.JPG',
     'assets/brandonpavan1.svg',
     'assets/brandonpavan2.svg',
     'assets/brandonpavan3.svg',
@@ -34,79 +29,47 @@ export class GalleryComponent implements OnInit {
     'assets/hoebermann1.svg',
     'assets/hoebermann2.svg',
     'assets/hoebermann3.svg',
-    // 'assets/hoebermann4.svg'
-]
-  // albums = [
-  //   {
-  //     "_id": { "$oid": "j-d-l-rigoletto" },
-  //     "links": [
-  //       "assets/rigolettostlouis1.svg",
-  //       "assets/rigolettostlouis2.svg"
-  //     ],
-  //     "description": "RIGOLETTO | OPERA THEATER ST LOUIS [ PHOTOS BY J DAVID LEVY ]"
-  //   },
-  //   {
-  //     "_id": { "$oid": "brandonpavan" },
-  //     "links": [
-  //       'assets/brandonpavan1.svg',
-  //       'assets/brandonpavan2.svg',
-  //       'assets/brandonpavan3.svg',
-  //       'assets/brandonpavan4.svg',
-  //     ],
-  //     "description": "PHOTOS BY BRANDON PAVAN"
-  //   },
-  //   {
-  //     "_id": { "$oid": "portland-difficulty" },
-  //     "links": [
-  //       "assets/coryweaver.svg"
-  //     ],
-  //     "description": "DIFFICULTY OF CROSSING A FIELD | PORTLAND OPERA"
-  //   },
-  //   {
-  //     "_id": { "$oid": "hoebermann" },
-  //     "links": [
-  //       'assets/hoebermann1.svg',
-  //       'assets/hoebermann2.svg',
-  //       'assets/hoebermann3.svg',
-  //       'assets/hoebermann4.svg'
-  //     ],
-  //     "description": "PHOTOS BY KRISTEN HOEBERMANN"
-  //   },
-  //   {
-  //     "_id": { "$oid": "elise-bakketun-pearl-fishers" },
-  //     "links": [
-  //       "assets/bakketun1.svg",
-  //       "assets/bakkuten2.svg",
-  //       "assets/bakkuten3.svg"
-  //     ],
-  //     "description": "PEARL FISHERS | LYRIC OPERA OF KANSAS CITY [ PHOTOS BY ELISE BAKKETUN ]"
-  //   },
-  //   {
-  //     "_id": { "$oid": "dario-acosta-opera-news" },
-  //     "links": [
-  //       "assets/soundbites1.svg",
-  //       "assets/soundbites2.svg"
-  //     ],
-  //     "description": "OPERA NEWS DEC 2018 | PHOTOS BY DARIO ACOSTA"
-  //   },
-  //   // {
-  //   //   "_id": { "$oid": "tosca-metropolitan-opera" },
-  //   //   "links": [
-  //   //     "assets/screenshot.svg"
-  //   //   ],
-  //   //   "description": "TOSCA | METROPOLITAN OPERA"
-  //   // },
-  //   // {
-  //   //   "_id": { "$oid": "don-giovanni-venture" },
-  //   //   "links": ["assets/dongiovanniventure.svg"],
-  //   //   "description": "DON GIOVANNI | VENTURE OPERA"
-  //   // },
-  //   {
-  //     "_id": { "$oid": "pistola-prelude" },
-  //     "links": ["assets/pistola.svg"],
-  //     "description": "FALSTAFF | PRELUDE TO PERFORMANCE"
-  //   }
-  // ];
+  ]
+  images1 = [
+    'assets/coryweaver.svg',
+    'assets/rigolettostlouis1.svg',
+    'assets/rigolettostlouis2.svg']
+  images2 = [
+    'assets/tosca.jpg',
+    'assets/fanciullamno.svg',
+    'assets/fanciullaomaha2.svg']
+  images3 = [
+    'assets/fancuillaomaha1.svg',
+    'assets/magicflute1.svg',
+    'assets/magicflute2.svg']
+  images4 = [
+    'assets/rapeoflucretia.svg',
+    'assets/rapeoflucretia2.svg',
+    'assets/soundbites1.svg']
+  images5 = [
+    'assets/soundbites2.svg',
+    'assets/brandonpavan1.svg',
+    'assets/brandonpavan2.svg']
+  images6 = [
+    'assets/brandonpavan3.svg',
+    'assets/brandonpavan4.svg',
+    'assets/hoebermann1.svg']
+  images7 = [
+    'assets/hoebermann2.svg',
+    'assets/hoebermann3.svg',
+  ]
   ngOnInit() {
+  }
+
+  lightbox($event){
+    if (window.location.href.includes("gallery")){
+      const srcPath = $event.path[0].src
+      const imageName = srcPath.split("assets")[1]
+      this.selectedImage = "/assets" + imageName
+    }
+  }
+
+  exitLightbox(){
+    this.selectedImage=""
   }
 }

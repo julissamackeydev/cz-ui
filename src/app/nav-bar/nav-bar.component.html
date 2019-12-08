@@ -1,20 +1,30 @@
-<header>
-<ul id="mobile-nav" class="dropdown-content white z-depth-0">
-  <li><a class='blue-grey-text text-darken-3' [routerLink]="['/calendar']">CALENDAR</a></li>
-  <li><a class='blue-grey-text text-darken-3' [routerLink]="['/gallery']">GALLERY</a></li>
-  <li><a class='blue-grey-text text-darken-3' [routerLink]="['/bio']">BIOGRAPHY</a></li>
-  <li><a class='blue-grey-text text-darken-3' [routerLink]="['/latest']">LATEST NEWS</a></li>
-  <li><a class='blue-grey-text text-darken-3' [routerLink]="['/acclaim']">ACCLAIM</a></li>
-</ul>
-<div class='navbar-fixed'>
-  <nav class='white z-depth-0'>
-    <div class="nav-wrapper ">
-      <a class='brand-logo truncate blue-grey-text text-darken-3 center' [routerLink]="['/']">CHRISTIAN ZAREMBA</a>
-      <ul id='nav-mobile' class='right'>
-        <li><a class="dropdown-trigger blue-grey-text text-darken-3" href="#!" data-target="mobile-nav"><i style='font-size: 2.3rem'class="material-icons right">more_vert</i></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+<div class="navbar-fixed">
+<nav class='white z-depth-0'>
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo truncate blue-grey-text text-darken-3 center" [routerLink]="['/']">CHRISTIAN ZAREMBA</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger blue-grey-text text-darken-3"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a class='blue-grey-text text-darken-3' [routerLink]="['/calendar']">CALENDAR</a></li>
+      <li><a class='blue-grey-text text-darken-3' [routerLink]="['/gallery']">GALLERY</a></li>
+      <li><a class='blue-grey-text text-darken-3' [routerLink]="['/bio']">BIOGRAPHY</a></li>
+      <li><a class='blue-grey-text text-darken-3' [routerLink]="['/latest']">PRESS</a></li>
+      <li><a class='blue-grey-text text-darken-3' [routerLink]="['/acclaim']">CRITICAL ACCLAIM</a></li>
+      <li><a class='blue-grey-text text-darken-3' href="https://www.instagram.com/zarembabass/" target="_blank">INSTAGRAM</a></li>
+    </ul>
+  </div>
+</nav>
 </div>
-</header>
+<ul class="sidenav" id="mobile-demo">
+  <li><a class='blue-grey-text text-darken-3' [routerLink]="['/calendar']">CALENDAR</a></li>
+  <div class="divider red"></div>
+  <li><a class='blue-grey-text text-darken-3' [routerLink]="['/gallery']">GALLERY</a></li>
+  <div class="divider red"></div>
+  <li><a class='blue-grey-text text-darken-3' [routerLink]="['/bio']">BIOGRAPHY</a></li>
+  <div class="divider red"></div>
+  <li><a class='blue-grey-text text-darken-3' [routerLink]="['/latest']">PRESS</a></li>
+  <div class="divider red"></div>
+  <li><a class='blue-grey-text text-darken-3' [routerLink]="['/acclaim']">CRITICAL ACCLAIM</a></li>
+  <div class="divider red"></div>
+  <li><a class='blue-grey-text text-darken-3' href="https://www.instagram.com/zarembabass/" target="_blank">INSTAGRAM</a></li>
+  <div class="divider red"></div>
+</ul>

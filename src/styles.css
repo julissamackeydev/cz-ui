@@ -1,66 +1,8 @@
 body{
     font-family: 'Oswald', sans-serif;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-header{
-    height:42px;
-}
-main{
-    flex: 1 0;
-    /* padding-bottom: 12vh; */
-}
-.full-height{
-    height:750px; 
-}
-.primary-background-color{
-    background-image: linear-gradient(to left, #000000, #1e2024);
-
-}
-.detail-text{
-    color:white;
-}
-.hidden{
-    display: none;
-}
-.conditional-top-margin{
-    margin-top: 200px;
-}
-.med-top-margin{
-    margin-top: 100px;
-}
-.lesser-top-margin{
-    margin-top: 50px;
-}
-.left-margin{
-    margin-left: 17%;
 }
 .cz-red-text{
     color:#990000;
-}
-.light-text{
-    color: lightgray;
-}
-.bio-text{
-    font-size: 18px;
-}
-.dark-text{
-    color: black;
-    opacity: 0.9;
-}
-.nav-text{
-    font-style: bold;
-    font-size: 40px;
-    margin-left: 10%;
-    /* margin-bottom: 10%; */
-    margin-top: -3%;
-}
-.landing-page-height{
-    height: 85%;
-}
-.landing-page-background{
-    background-image: linear-gradient(to left, #000000, #021226);
 }
 .btn, .btn-large, .btn-small, .btn-floating, .btn-large, .btn-small, .btn-flat {
     font-size: inherit;
@@ -88,7 +30,7 @@ main{
 .latest-block{
     position: relative;
     text-align: center;
-    color: #37473f;
+    color: black;
     width:100%;
 }
 .latest-block:hover{
@@ -128,32 +70,37 @@ blockquote{
 .subtitle{
     line-height: 2;
 }
-.event{
-    background-color: #bdbdbd;
-    line-height: 0;
-}
-.event a{
-    color:#37473f;
-}
-.event:hover, .event:hover a{
-    background-color: #990000;
-    color: white !important; 
-}
 .prevevent{
-    background-color: #021226;
-    color: white;
+    background-color: #bdbdbd;
     line-height: 0;
 }
 .prevevent a{
     color:white;
 }
-.prevevent:hover, .prevevent:hover a{
-    background-color: #021226;
+.event:hover, .event:hover a{
+    background-color: #990000;
     color: white !important; 
+}
+.event{
+    background-color: #021226;
+    color: white;
+    line-height: 0;
+}
+.event a{
+    color:white;
 }
 .title{
     font-size: 2rem;
 }
 .mass-text{
     font-variant-caps: all-small-caps;
+}
+.closelightbox:hover{
+  cursor: pointer;
+}
+.showall{
+  opacity:1;
+}
+.hideall{
+  opacity:0;
 }

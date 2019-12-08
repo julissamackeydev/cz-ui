@@ -1,6 +1,11 @@
-<div class="container blue-grey-text text-darken-4">
-  <p class='title center-align blue-grey darken-3 white-text'>ABOUT CHRISTIAN </p>
-  <div *ngFor="let paragraph of content">
-    <p class="flow-text left-align mass-text">{{paragraph}}</p>
+<div class="container">
+  <p class='title center-align' style="background-color: #021226;
+  color: white;">BIOGRAPHY</p>
+  <div class="row">
+    <img src="assets/brandonpavan2.svg" class="responsive-image col s12 m4 l4">
+    <div *ngFor="let paragraph of content" >
+      <p class="flow-text left-align mass-text blue-grey-text text-darken-4">{{paragraph}}</p>
+    </div>
   </div>
+
 </div>

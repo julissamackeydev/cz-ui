@@ -1,7 +1,7 @@
-<div class="container blue-grey-text text-darken-3">
 
+<div class="container blue-grey-text text-darken-3">
   <p style='font-size: 1.7rem' class="flowtext center-align">UPCOMING PERFORMANCES</p>
-  <div class="row valign-wrapper center-align grey lighten-1" style="margin-bottom:0;">
+  <div class="row valign-wrapper center-align " style="margin-bottom:0;">
     <div class="col s4">
       <p>DATE</p>
     </div>
@@ -16,27 +16,27 @@
   <div class="divider cz-red-text"></div>
 
   <div *ngFor="let event of upcoming">
-    <div class="row  event center-align" >
+    <div class="row event center-align" >
       <div class="col s4 truncate">
-        <p><a  href={{event.tickets}} target="_blank">{{event.date}}</a></p>
+        <p><a href={{event.tickets}} target="_blank">{{event.date}}</a></p>
       </div>
       <div class="col s4 truncate">
-        <p><a  href={{event.tickets}} target="_blank">{{event.location}}, {{event.city}}</a></p>
+        <p><a href={{event.tickets}} target="_blank">{{event.location}}, {{event.city}}</a></p>
       </div> 
-      <div class="col s3 truncate">
-        <p><a class='blue-grey-text text-darken-3' href={{event.tickets}} target="_blank">{{event.event}}</a></p>
+      <div class="col s4 truncate">
+        <p><a href={{event.tickets}} target="_blank">{{event.event}}</a></p>
       </div>
     </div>
   </div>
 
-  <div class="event:hover divider"></div>
+  <div class="divider red"></div>
 
 </div>
 <!-- previous performances -->
 <div class="container blue-grey-text text-darken-3">
 
   <p style='font-size: 1.7rem' class="flowtext center-align">PREVIOUS PERFORMANCES</p>
-  <div class="row valign-wrapper center-align" style="margin-bottom:0;">
+  <div class="row valign-wrapper center-align " style="margin-bottom:0;">
     <div class="col s4">
       <p>DATE</p>
     </div>
@@ -58,11 +58,10 @@
       <div class="col s4 truncate">
         <p>{{event.location}}, {{event.city}}</p>
       </div> 
-      <div class="col s3 truncate">
+      <div class="col s4 truncate">
         <p>{{event.event}}</p>
       </div>
     </div>
   </div>
-
 </div>
 
