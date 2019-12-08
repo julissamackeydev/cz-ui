@@ -30,7 +30,7 @@ body{
 .latest-block{
     position: relative;
     text-align: center;
-    color: #37473f;
+    color: black;
     width:100%;
 }
 .latest-block:hover{
@@ -94,4 +94,13 @@ blockquote{
 }
 .mass-text{
     font-variant-caps: all-small-caps;
+}
+.closelightbox:hover{
+  cursor: pointer;
+}
+.showall{
+  opacity:1;
+}
+.hideall{
+  opacity:0;
 }
