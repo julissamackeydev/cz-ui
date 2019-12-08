@@ -7,26 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
   constructor() { }
-  images=[
+  images = [
     'assets/coryweaver.svg',
-    // 'assets/bakkuten2.svg',
-    // 'assets/bakketun1.svg',
-    // 'assets/bakkuten3.svg',
     'assets/rigolettostlouis1.svg',
     'assets/rigolettostlouis2.svg',
     'assets/tosca.jpg',
     'assets/fanciullamno.svg',
     'assets/fanciullaomaha2.svg',
     'assets/fancuillaomaha1.svg',
-    // 'assets/glimmerglass.svg',
     'assets/magicflute1.svg',
     'assets/magicflute2.svg',
-    // 'assets/pistola.svg',
     'assets/rapeoflucretia.svg',
     'assets/rapeoflucretia2.svg',
     'assets/soundbites1.svg',
     'assets/soundbites2.svg',
-    // 'assets/ventureopera.JPG',
     'assets/brandonpavan1.svg',
     'assets/brandonpavan2.svg',
     'assets/brandonpavan3.svg',
@@ -34,8 +28,31 @@ export class GalleryComponent implements OnInit {
     'assets/hoebermann1.svg',
     'assets/hoebermann2.svg',
     'assets/hoebermann3.svg',
-    // 'assets/hoebermann4.svg'
-]
+  ]
+  images1 = [
+    'assets/coryweaver.svg',
+    'assets/rigolettostlouis1.svg',
+    'assets/rigolettostlouis2.svg']
+  images2 = [
+    'assets/tosca.jpg',
+    'assets/fanciullamno.svg',
+    'assets/fanciullaomaha2.svg']
+  images3 = [
+    'assets/fancuillaomaha1.svg',
+    'assets/magicflute1.svg',
+    'assets/magicflute2.svg',
+    'assets/rapeoflucretia.svg',
+    'assets/rapeoflucretia2.svg',
+    'assets/soundbites1.svg',
+    'assets/soundbites2.svg',
+    'assets/brandonpavan1.svg',
+    'assets/brandonpavan2.svg',
+    'assets/brandonpavan3.svg',
+    'assets/brandonpavan4.svg',
+    'assets/hoebermann1.svg',
+    'assets/hoebermann2.svg',
+    'assets/hoebermann3.svg',
+  ]
   // albums = [
   //   {
   //     "_id": { "$oid": "j-d-l-rigoletto" },

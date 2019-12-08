@@ -70,28 +70,24 @@ blockquote{
 .subtitle{
     line-height: 2;
 }
-.event{
-    background-color: #bdbdbd;
-    line-height: 0;
-}
-.event a{
-    color:#37473f;
-}
-.event:hover, .event:hover a{
-    background-color: #990000;
-    color: white !important; 
-}
 .prevevent{
-    background-color: #021226;
-    color: white;
+    background-color: #bdbdbd;
     line-height: 0;
 }
 .prevevent a{
     color:white;
 }
-.prevevent:hover, .prevevent:hover a{
-    background-color: #021226;
+.event:hover, .event:hover a{
+    background-color: #990000;
     color: white !important; 
+}
+.event{
+    background-color: #021226;
+    color: white;
+    line-height: 0;
+}
+.event a{
+    color:white;
 }
 .title{
     font-size: 2rem;
