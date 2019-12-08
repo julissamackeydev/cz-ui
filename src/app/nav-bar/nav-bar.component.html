@@ -1,12 +1,12 @@
 <header>
-<ul id="mobile-nav" class="dropdown-content white z-depth-0">
+<!-- <ul id="mobile-nav" class="dropdown-content white z-depth-0">
   <li><a class='blue-grey-text text-darken-3' [routerLink]="['/calendar']">CALENDAR</a></li>
   <li><a class='blue-grey-text text-darken-3' [routerLink]="['/gallery']">GALLERY</a></li>
   <li><a class='blue-grey-text text-darken-3' [routerLink]="['/bio']">BIOGRAPHY</a></li>
   <li><a class='blue-grey-text text-darken-3' [routerLink]="['/latest']">LATEST NEWS</a></li>
   <li><a class='blue-grey-text text-darken-3' [routerLink]="['/acclaim']">ACCLAIM</a></li>
-</ul>
-<div class='navbar-fixed'>
+</ul> -->
+<!-- <div class='navbar-fixed'>
   <nav class='white z-depth-0'>
     <div class="nav-wrapper ">
       <a class='brand-logo truncate blue-grey-text text-darken-3 center' [routerLink]="['/']">CHRISTIAN ZAREMBA</a>
@@ -16,5 +16,29 @@
       </ul>
     </div>
   </nav>
+</div> -->
+
+<div class="navbar-fixed">
+<nav class='white z-depth-0'>
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo truncate blue-grey-text text-darken-3 center" [routerLink]="['/']">CHRISTIAN ZAREMBA</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger blue-grey-text text-darken-3"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a class='blue-grey-text text-darken-3' [routerLink]="['/calendar']">CALENDAR</a></li>
+      <li><a class='blue-grey-text text-darken-3' [routerLink]="['/gallery']">GALLERY</a></li>
+      <li><a class='blue-grey-text text-darken-3' [routerLink]="['/bio']">BIOGRAPHY</a></li>
+      <li><a class='blue-grey-text text-darken-3' [routerLink]="['/latest']">LATEST NEWS</a></li>
+      <li><a class='blue-grey-text text-darken-3' [routerLink]="['/acclaim']">ACCLAIM</a></li>
+    </ul>
+  </div>
+</nav>
 </div>
+<ul class="sidenav" id="mobile-demo">
+  <li><a class='blue-grey-text text-darken-3' [routerLink]="['/calendar']">CALENDAR</a></li>
+  <li><a class='blue-grey-text text-darken-3' [routerLink]="['/gallery']">GALLERY</a></li>
+  <li><a class='blue-grey-text text-darken-3' [routerLink]="['/bio']">BIOGRAPHY</a></li>
+  <li><a class='blue-grey-text text-darken-3' [routerLink]="['/latest']">LATEST NEWS</a></li>
+  <li><a class='blue-grey-text text-darken-3' [routerLink]="['/acclaim']">ACCLAIM</a></li>
+</ul>
+        
 </header>
