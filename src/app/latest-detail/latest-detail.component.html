@@ -1,10 +1,17 @@
-<div class="container blue-grey-text text-darken-3" style='height: 80vh;'>
-    <p class='title'>{{currentPiece.description}}</p>
+<div class="container blue-grey-text text-darken-3" >
+  <div class="divider red"></div>
+    <p class='title center-align'>{{currentPiece.description}}</p>
+    <div class="row">
+    <img [src]="currentPiece.image" class="col s12 m8 l6 offset-l3 offset-m2">
+  </div>
   <div class="row">
     <div class="flow-text">
-      <p>{{currentPiece.content}}</p>
+      <div *ngFor="let paragrapsh of currentPiece.content">
+        <p>{{paragrapsh}}</p><br>
+      </div>
       <h6 *ngIf="currentPiece.source">source: {{currentPiece.source}}</h6>
       <h6>published: {{currentPiece.date}}</h6>
     </div>
   </div>
 </div>
+
