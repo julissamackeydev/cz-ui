@@ -9,6 +9,7 @@ export class GalleryComponent implements OnInit {
   constructor() { }
   selectedImage = ""
   images = [
+    'assets/agrippina.png',
     'assets/coryweaver.svg',
     'assets/rigolettostlouis1.svg',
     'assets/rigolettostlouis2.svg',
@@ -31,11 +32,11 @@ export class GalleryComponent implements OnInit {
     'assets/hoebermann3.svg',
   ]
   images1 = [
+    'assets/agrippina.png',
     'assets/coryweaver.svg',
-    'assets/rigolettostlouis1.svg',
-    'assets/rigolettostlouis2.svg']
+    'assets/rigolettostlouis1.svg']
   images2 = [
-    'assets/tosca.jpg',
+    'assets/rigolettostlouis2.svg',
     'assets/fanciullamno.svg',
     'assets/fanciullaomaha2.svg']
   images3 = [
@@ -45,16 +46,17 @@ export class GalleryComponent implements OnInit {
   images4 = [
     'assets/rapeoflucretia.svg',
     'assets/rapeoflucretia2.svg',
-    'assets/soundbites1.svg']
-  images5 = [
+    'assets/tosca.jpg']
+  images5 = [,
+    'assets/soundbites1.svg',
     'assets/soundbites2.svg',
-    'assets/brandonpavan1.svg',
-    'assets/brandonpavan2.svg']
+    'assets/brandonpavan1.svg']
   images6 = [
+    'assets/brandonpavan2.svg',
     'assets/brandonpavan3.svg',
-    'assets/brandonpavan4.svg',
-    'assets/hoebermann1.svg']
+    'assets/brandonpavan4.svg']
   images7 = [
+    'assets/hoebermann1.svg',
     'assets/hoebermann2.svg',
     'assets/hoebermann3.svg',
   ]
