@@ -38,6 +38,16 @@ export class CalendarComponent implements OnInit {
       "city": "MONTREAL",
       "event": "DIE ZAUBERFLÖTE",
       "tickets": "https://www.operademontreal.com/en"
+    },
+    {
+      "_id": {
+        "$oid": "5cd8a219d38f5a51aeb17aa3"
+      },
+      "date": "NOV 7 - 15 '20",
+      "location": "AUSTIN OPERA",
+      "city": "AUSTIN",
+      "event": "LE NOZZE DI FIGARO",
+      "tickets": "https://my.austinopera.org/events?view=list"
     }
   ]
   previous = [{
