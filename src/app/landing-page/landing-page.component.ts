@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class LandingPageComponent implements OnInit {
 
   constructor() { }
-  location = `L'OPERA DE MONTREAL`;
-  opera = `DIE ZAUBERFLÖTE`;
-  startDate = `APR 19`;
-  endDate = `MAY 30 '20`;
-  tickets = `https://www.operademontreal.com/en`;
+  location = `NASHVILLE OPERA`;
+  opera = `RIGOLETTO`;
+  startDate = `MAR 28`;
+  endDate = `APR 11 '20`;
+  tickets = `https://www.nashvilleopera.org`;
   upcoming = [
     {
         "_id": {
