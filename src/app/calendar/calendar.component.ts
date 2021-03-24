@@ -23,7 +23,7 @@ export class CalendarComponent implements OnInit {
       "_id": {
         "$oid": "5cd8a219d38f5a51aeb17aa3"
       },
-      "date": "APR 8 + APR 10 '21",
+      "date": "[TBD]",
       "location": "NASHVILLE OPERA",
       "city": "NASHVILLE",
       "event": "RIGOLETTO",
@@ -33,7 +33,7 @@ export class CalendarComponent implements OnInit {
       "_id": {
         "$oid": "5cd8a219d38f5a51aeb17aa3"
       },
-      "date": "[TBD] NOV 2021",
+      "date": "[TBD]",
       "location": "AUSTIN OPERA",
       "city": "AUSTIN",
       "event": "LE NOZZE DI FIGARO",
@@ -43,7 +43,7 @@ export class CalendarComponent implements OnInit {
       "_id": {
         "$oid": "5cd8a219d38f5a51aeb17aa3"
       },
-      "date": "[TBD] DEC 2021",
+      "date": "[TBD]",
       "location": "THÉÂTRE DU CAPITOLE",
       "city": "TOULOUSE",
       "event": "DIE ZAUBERFLÖTE",
